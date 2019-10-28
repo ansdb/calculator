@@ -3,6 +3,27 @@ $delete-btn-color: rgb(248, 179, 76);
 $result-color: rgb(105, 245, 116);
 $main-color: rgb(255, 252, 246);
 
+@mixin button-styling($button-type) {
+    @if $button-type == default{ 
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    justify-self: center;
+    background-color: transparent;
+    color: #000000;
+    }
+    @else if $button-type == reset{
+    background-color: $reset-btn-color;
+    color: #ffffff;
+    }
+    @else if $button-type == delete{
+    background-color: $delete-btn-color;
+    }
+}
+
 #container{
     width: 22.5%;
     margin: 3rem auto;
@@ -18,4 +39,13 @@ $main-color: rgb(255, 252, 246);
     background-color: $main-color;
     border-bottom: 2px solid #5c5c5c;
     grid-column: 1/5;
+}
+button{
+    @include button-styling(default);
+}
+button:first-of-type{
+    @include button-styling(reset);
+}
+button:nth-of-type(4){
+    @include button-styling(delete);
 }
