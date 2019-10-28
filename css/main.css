@@ -4,6 +4,7 @@
   background-color: #fffcf6;
   border: 2px solid #5c5c5c;
   border-radius: .25rem;
+  padding-bottom: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
