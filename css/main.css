@@ -1,10 +1,21 @@
 #container {
-  width: 30%;
+  width: 22.5%;
+  background-color: #fffcf6;
+  border: 2px solid #5c5c5c;
+  border-radius: .25rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
   -ms-grid-rows: 5rem (auto)[5];
       grid-template-rows: 5rem repeat(5, auto);
+}
+
+#input-output-area {
+  background-color: #fffcf6;
+  border-bottom: 2px solid #5c5c5c;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
 }
 /*# sourceMappingURL=main.css.map */

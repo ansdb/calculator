@@ -4,8 +4,16 @@ $result-color: rgb(105, 245, 116);
 $main-color: rgb(255, 252, 246);
 
 #container{
-    width: 30%;
+    width: 22.5%;
+    background-color: $main-color;
+    border: 2px solid #5c5c5c;
+    border-radius: .25rem;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 5rem repeat(5, auto);
+}
+#input-output-area{
+    background-color: $main-color;
+    border-bottom: 2px solid #5c5c5c;
+    grid-column: 1/5;
 }
