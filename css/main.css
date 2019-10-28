@@ -1,5 +1,6 @@
 #container {
   width: 22.5%;
+  margin: 3rem auto;
   background-color: #fffcf6;
   border: 2px solid #5c5c5c;
   border-radius: .25rem;
@@ -9,6 +10,7 @@
       grid-template-columns: repeat(4, 25%);
   -ms-grid-rows: 5rem (auto)[5];
       grid-template-rows: 5rem repeat(5, auto);
+  grid-gap: 1rem 0px;
 }
 
 #input-output-area {

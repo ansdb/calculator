@@ -1,16 +1,18 @@
-$reset-btn-color: rgb(235, 58, 38);
+$reset-btn-color: rgb(204, 20, 0);
 $delete-btn-color: rgb(248, 179, 76);
 $result-color: rgb(105, 245, 116);
 $main-color: rgb(255, 252, 246);
 
 #container{
     width: 22.5%;
+    margin: 3rem auto;
     background-color: $main-color;
     border: 2px solid #5c5c5c;
     border-radius: .25rem;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 5rem repeat(5, auto);
+    grid-gap: 1rem 0px;
 }
 #input-output-area{
     background-color: $main-color;
