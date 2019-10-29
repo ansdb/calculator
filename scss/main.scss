@@ -35,18 +35,20 @@ $main-color: rgb(255, 252, 246);
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 5rem repeat(5, auto);
     grid-gap: 1rem 0px;
+    
+    & #input-output-area{
+        background-color: $main-color;
+        border-bottom: 2px solid #5c5c5c;
+        grid-column: 1/5;
+    }
+    & button{
+        @include button-styling(default);
+    }
+    & button:first-of-type{
+        @include button-styling(reset);
+    }
+    & button:nth-of-type(4){
+        @include button-styling(delete);
+    }
 }
-#input-output-area{
-    background-color: $main-color;
-    border-bottom: 2px solid #5c5c5c;
-    grid-column: 1/5;
-}
-button{
-    @include button-styling(default);
-}
-button:first-of-type{
-    @include button-styling(reset);
-}
-button:nth-of-type(4){
-    @include button-styling(delete);
-}
+

@@ -14,7 +14,7 @@
   grid-gap: 1rem 0px;
 }
 
-#input-output-area {
+#container #input-output-area {
   background-color: #fffcf6;
   border-bottom: 2px solid #5c5c5c;
   -ms-grid-column: 1;
@@ -22,7 +22,7 @@
   grid-column: 1/5;
 }
 
-button {
+#container button {
   width: 3.5rem;
   height: 3.5rem;
   border: none;
@@ -35,12 +35,12 @@ button {
   color: #000000;
 }
 
-button:first-of-type {
+#container button:first-of-type {
   background-color: #cc1400;
   color: #ffffff;
 }
 
-button:nth-of-type(4) {
+#container button:nth-of-type(4) {
   background-color: #f8b34c;
 }
 /*# sourceMappingURL=main.css.map */
