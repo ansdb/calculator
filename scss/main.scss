@@ -47,5 +47,9 @@
     & button:nth-of-type(4){
         @include button-styling(delete);
     }
+    & button[value="="]{
+        background-color: $result-color;
+        color: #ffffff;
+    }
 }
 

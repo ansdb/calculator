@@ -36,11 +36,16 @@
 }
 
 #container button:first-of-type {
-  background-color: #cc1400;
+  background-color: #ba1d2d;
   color: #ffffff;
 }
 
 #container button:nth-of-type(4) {
-  background-color: #f8b34c;
+  background-color: #f4ac3e;
+}
+
+#container button[value="="] {
+  background-color: #59cd88;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
