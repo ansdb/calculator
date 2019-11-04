@@ -1,5 +1,13 @@
 # Calculator.
 
+## Technologies used here:
+
+- **HTML5**
+- **CSS3**
+  - _Grid Layouts_.
+- **SASS**
+- **JavaScript**
+
 ## Contribution Guidelines.
 
 - After _Forking_, _Cloning_ this repo create a **branch** with the name of the _feature_ you want to add
