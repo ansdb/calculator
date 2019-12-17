@@ -11,6 +11,7 @@
     justify-self: center;
     background-color: transparent;
     color: #000000;
+    margin: .6rem 0rem .6rem 0rem;
     }
     @else if $button-type == reset{
     background-color: $reset-btn-color;
@@ -27,11 +28,9 @@
     background-color: $main-color;
     border: 2px solid #5c5c5c;
     border-radius: .25rem;
-    padding-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 5rem repeat(5, auto);
-    grid-gap: 1rem 0px;
     
     & #input-output-area{
         background-color: $main-color;
@@ -50,6 +49,9 @@
     & button[value="="]{
         background-color: $result-color;
         color: #ffffff;
+        height: 8.1rem;
+        grid-column: 4/5;
+        grid-row: 5/7;
     }
 }
 

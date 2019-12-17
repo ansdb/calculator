@@ -4,14 +4,12 @@
   background-color: #fffcf6;
   border: 2px solid #5c5c5c;
   border-radius: .25rem;
-  padding-bottom: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
   -ms-grid-rows: 5rem (auto)[5];
       grid-template-rows: 5rem repeat(5, auto);
-  grid-gap: 1rem 0px;
 }
 
 #container #input-output-area {
@@ -33,6 +31,7 @@
       justify-self: center;
   background-color: transparent;
   color: #000000;
+  margin: .6rem 0rem .6rem 0rem;
 }
 
 #container button:first-of-type {
@@ -47,5 +46,12 @@
 #container button[value="="] {
   background-color: #59cd88;
   color: #ffffff;
+  height: 8.1rem;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
 }
 /*# sourceMappingURL=main.css.map */
