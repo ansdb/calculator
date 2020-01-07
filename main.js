@@ -18,15 +18,15 @@ const input = document.querySelector("#input-output-area");
           input.innerHTML = input.innerHTML.slice(0, -1);
           break;
   
-        default:
-          // Clear the first "0" value that is initially displayed
-          input.innerHTML.charAt(0) == 0
-            ? (input.innerHTML = "")
-            : input.innerHTML;
-  
-          // Concatenate the values of the clicked button
-          input.innerHTML += value;
-          break;
+          case "btn":
+            // Clear the first "0" value that is initially displayed but keep the value if it is not 0
+            input.innerHTML.charAt(0) == 0
+              ? (input.innerHTML = "")
+              : input.innerHTML;
+    
+            // Concatenate the values of the clicked button
+            input.innerHTML += value;
+            break;
       }
     });
     
